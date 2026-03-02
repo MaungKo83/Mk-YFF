@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT utvikling - Javascript</title>
+    <link rel="icon" type="image/favi-icon" href="../images/favicon.ico">
+
+    
+    <!-- Basic SEO/Open Graph -->
+    <meta
+      name="description"
+      content="IT utvikling Læringportalen. Lær grunnleggende ferdigheter innen frontend og mer."
+    />
+    <meta property="og:title" content="IT utvikling Læringportalen" />
+    <meta property="og:description" content="IT utvikling Læringportalen." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nb_NO" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">IT utvikling Læringportalen</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Meny"
+        >
+          ☰
+        </button>
+
+        <nav id="site-nav" class="nav">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="java.html" aria-current="page">JavaScript</a></li>
+            <li><a href="om.html">Om</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>IT utvikling Læringportalen</h1>
+          <p>
+            Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="html.html">Start med HTML</a>
+            <a class="btn" href="css.html">Utforsk CSS</a>
+            <a class="btn" href="java.html">JavaScript</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="../images/utvikling.jpg"
+            alt="Illustrasjon av webutvikling"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="courses container">
+        <h2>JavaScript-koden</h2>
+
+        <!-- JavaScript -->
+        <article class="card">
+          <img src="../images/JS.jpg" alt="JavaScript kode illustrasjon" />
+
+          <div class="card-body">
+            <h3>Hva er JavaScript?</h3>
+
+            <p>
+              JavaScript (JS) er språket som gjør nettsider interaktive.
+              <br />
+              <span class="dots">...</span>
+              <span class="more-text hidden">
+                HTML lager innholdet, CSS bestemmer utseendet, og JavaScript gir
+                logikk, handlinger og respons når brukeren klikker, skriver
+                eller scroller.
+                <br />
+                <br />
+                • JavaScript-koden på nettsiden styrer tre viktige funksjoner:
+                mobilnavigasjonen, “Les mer”-knappene og automatisk årstall i
+                bunnteksten. <br />
+                • Mobilmenyen åpnes og lukkes ved å endre CSS klasser og
+                oppdatere aria-expanded for tilgjengelighet. <br />
+                • “Les mer”-knappene fungerer ved at JavaScript finner den
+                riktige teksten i hvert kort og viser eller skjuler den når
+                brukeren klikker. I tillegg setter JavaScript inn riktig årstall
+                i footer ved hjelp av new Date().getFullYear(). Disse
+                funksjonene gjør nettsiden mer brukervennlig, moderne og
+                dynamisk.
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- Mobilnavigasjon seksjon -->
+        <article class="card">
+          <img
+            src="../images/mobile menu.jpg"
+            alt="Illustrasjon av mobilnavigasjon og hamburger-meny"
+          />
+
+          <div class="card-body">
+            <h3>Mobilnavigasjon (hamburger-meny)</h3>
+
+            <p>
+              querySelector(".nav-toggle") finner menyknappen (☰). <br />
+              getElementById("site-nav") finner selve navigasjonsmenyen.
+              <br /><br />
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                addEventListener("click") gjør at funksjonen kjører når brukeren
+                trykker på knappen. <br />
+                aria-expanded oppdateres for tilgjengelighet (f.eks. for
+                skjermlesere). <br />
+                nav.classList.toggle("open") viser eller skjuler menyen ved å
+                legge til eller fjerne CSS-klassen "open". <br />
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+        <!-- Read More-->
+        <article class="card">
+          <img src="../images/les mer.jpg" alt="les mer" />
+
+          <div class="card-body">
+            <h3>Les mer / Vis mindre”-funksjon</h3>
+
+            <p>
+              <li>
+                querySelectorAll(".read-more-btn") finner alle “Les
+                mer”-knappene på siden.
+              </li>
+              <li>
+                button.closest(".card-body") gjør at hver knapp kun kontrollerer
+                sin egen tekst.
+              </li>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <li>moreText er teksten som skal vises/skjules</li>
+                <li>dots er “...” som vises når teksten er skjult.</li>
+                <li>hidden er en CSS klasse som skjuler tekst.</li>
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- Automatisk årstall i footer -->
+        <article class="card">
+          <img
+            src="../images/footer.jpg"
+            alt="footer"
+          />
+
+          <div class="card-body">
+            <h3>Automatisk årstall i footer</h3>
+
+            <p>
+              getElementById("year") finner
+              <strong>&lt;span id="year"&gt;</strong> i bunnteksten.
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+                <strong>new Date().getFullYear()</strong> henter det nåværende
+                året fra brukerens datamaskin. <br />
+                <strong>textContent</strong> skriver dette årstallet inn i
+                HTML-elementet, slik at fotnoten alltid er oppdatert uten at du
+                trenger å endre den manuelt.
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Maung IT utvikling Læringportalen •
+          Bygget med HTML, CSS og JS
+        </p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

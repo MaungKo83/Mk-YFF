@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT utvikling Læringportalen</title>
+  <link rel="icon" type="image/favi-icon" href="../images/favicon.ico">
+
+  <!-- Basic SEO/Open Graph -->
+  <meta name="description" content="IT utvikling Læringportalen. Lær grunnleggende ferdigheter innen frontend og mer." />
+  <meta property="og:title" content="IT utvikling Læringportalen" />
+  <meta property="og:description" content="IT utvikling Læringportalen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="nb_NO" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Gå til forsiden">IT utvikling Læringportalen</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Åpne/lukke meny</span> ☰
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Hovedmeny">
+        <ul>
+          <li><a href="index.html" aria-current="page">Hjem</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="java.html">JavaScript</a></li>
+          <li><a href="om.html">Om</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="region" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 id="hero-title">IT utvikling Læringportalen</h1>
+        <p>Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="html.html">Start med HTML</a>
+          <a class="btn" href="css.html">Utforsk CSS</a>
+          <a class="btn" href="java.html">JavaScript</a>
+        </div>
+      </div>
+      <figure class="hero-media" aria-hidden="true">
+        <img src="../images/utvikling.jpg" alt="utvikling" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Portalen oversikt -->
+  <main id="main">
+    <section class="courses container" aria-labelledby="kurs-title">
+      <h2 id="kurs-title">IT utvikling oversikt</h2>
+
+      <div class="grid">
+        <!-- HTML Card -->
+        <article class="card">
+          <img src="../images/html.png" alt="html" />
+          <div class="card-body">
+            <h3>HTML</h3>
+            <p>HTML er grunnspråket for å lage nettsider. Det står for HyperText Markup Language, og brukes til å strukturere innholdet på en webside slik at nettleseren vet hva som er overskrifter, avsnitt, bilder, lenker osv.</p>
+            <a class="btn small" href="html.html" aria-label="Les mer om HTML">Les mer</a>
+          </div>
+        </article>
+
+        <!-- CSS Card -->
+        <article class="card">
+          <img src="../images/Css.png" alt="css" />
+          <div class="card-body">
+            <h3>CSS</h3>
+            <p>CSS (Cascading Style Sheets) er språket som brukes for å bestemme utseendet på en nettside.
+              Det styrer farger, størrelser, avstander, layout og mye mer.</p>
+            <a class="btn small" href="css.html" aria-label="Les mer om CSS">Les mer</a>
+          </div>
+        </article>
+
+        <!-- JavaScript Card -->
+        <article class="card">
+          <img src="../images/Javascript.gif" alt="js" />
+          <div class="card-body">
+            <h3>JavaScript</h3>
+            <p>JavaScript (JS) er språket som gjør nettsider interaktive.</p>
+            <a class="btn small" href="java.html" aria-label="Les mer om JavaScript">Les mer</a>
+          </div>
+        </article>
+
+        <!-- CV Card -->
+        <article class="card">
+          <img src="../images/pf.jpg" alt="cv" />
+          <div class="card-body">
+            <h3>Om meg</h3>
+            <p>Jeg er en positiv og ansvarsbevisst person med erfaring fra IT-relaterte oppgaver, logistikk og kundeservice. Jeg er lærevillig, strukturert og motivert for å utvikle meg videre innen IT-drift og teknologi. Jeg trives med samarbeid og tar ansvar for oppgavene mine.</p>
+            <a class="btn small" href="om.html" aria-label="Les mer om meg">Les mer</a>
+          </div>
+        </article>
+
+        <!-- Image gallery -->
+        
+        
+<article class="card">
+  <div class="slideshow-container">
+    <div class="myslide fade">
+      <h3>HTML</h3>
+      
+      <img src="../images/html.png" alt="html">
+      <div class="text">HTML Semantic </div>
+       
+
+      
+      <img src="../images/html1.png" alt="html">
+      <div class="text">  HTML‑struktur</div>
+    </div>
+</article>
+
+
+<article class="card">
+  <div class="slideshow-container">
+    <div class="myslide fade">
+      <h3>Frontend</h3>
+      
+      <img src="../images/SEO.jpg" alt="seo">
+      <div class="text">SEO </div>
+       
+     
+      
+      <img src="../images/utvikling.jpg" alt="utvikling">
+      <div class="text">utvikling</div>
+    </div>
+
+
+    <img src="../images/drift og utvikle.png" alt="utvikling">
+      <div class="text">IT drift og IT utvikling</div>
+    </div>
+</article>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact" aria-labelledby="kontakt-title">
+      <div class="container">
+        <h2 id="kontakt-title">Kontakt</h2>
+        <form class="contact-form" action="#" method="post" onsubmit="return false" aria-describedby="kontakt-hint">
+          <p id="kontakt-hint" class="muted">Dette er et demoskjema (ingen data sendes).</p>
+          <label class="field">
+            <span>Navn</span>
+            <input type="text" name="navn" placeholder="Ditt navn" required />
+          </label>
+          <label class="field">
+            <span>E post</span>
+            <input type="email" name="epost" placeholder="din@epost.no" required />
+          </label>
+          <label class="field">
+            <span>Melding</span>
+            <textarea name="melding" rows="4" placeholder="Skriv en kort melding …"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send forespørsel</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Maung IT utvikling Læringportalen • Bygget med HTML, CSS og JS</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+``

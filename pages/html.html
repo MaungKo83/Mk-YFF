@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT utvikling – HTML</title>
+    <link rel="icon" type="image/favi-icon" href="../images/favicon.ico">
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Kurs i IT drift og IT utvikling. Lær grunnleggende ferdigheter innen frontend, drift og mer."
+    />
+    <meta property="og:title" content="IT Kursportalen" />
+    <meta property="og:description" content="Kurs i IT drift og IT utvikling." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nb_NO" />
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">IT utvikling portalen</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Meny"
+        >
+          ☰
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Hovedmeny">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="html.html" aria-current="page">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="java.html">JavaScript</a></li>
+            <li><a href="om.html">Om</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">IT utvikling Læringportalen</h1>
+          <p>
+            Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="html.html">Start med HTML</a>
+            <a class="btn" href="css.html">Utforsk CSS</a>
+            <a class="btn" href="java.html">JavaScript</a>
+          </div>
+        </div>
+
+        <figure class="hero-media" aria-hidden="true">
+          <img
+            src="../images/utvikling.jpg"
+            alt="Illustrasjon av webutvikling på en laptop"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="courses container" aria-labelledby="html-oversikt">
+        <h2 id="html-oversikt">HTML – OVERSIKT</h2>
+
+        <!-- Card 1 -->
+        <article class="card">
+          <img
+            src="../images/html sm non.jpg"
+            alt="HTML-grunnstruktur og dokumentoppsett"
+          />
+          <div class="card-body">
+            <h3>Grunnleggende HTML-dokument</h3>
+            <p>
+              HTML står for Hypertext Markup Language og brukes til å
+              strukturere nettsider.
+              <span class="dots">...</span>
+              <span class="more-text hidden">
+                HTML er et markeringsspråk som bruker tagger for å definere
+                overskrifter, avsnitt, lenker og bilder i et dokument.
+                <br /><br />
+                • Hypertekst refererer til måten nettsider (HTML-dokumenter) er
+                koblet sammen på. Dermed kalles lenken som er tilgjengelig på en
+                nettside hypertekst. Som navnet antyder, er HTML et
+                markeringsspråk, som betyr at du bruker HTML til å ganske enkelt
+                «markere» et tekstdokument med tagger som forteller en nettleser
+                hvordan den skal strukturere det for visning.
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="../images/SEO.jpg" alt="SEO og meta-tagger illustrasjon" />
+          <div class="card-body">
+            <h3>Meta‑tagger (SEO)</h3>
+            <p>
+              Meta‑tagger gir informasjon om nettsiden til søkemotorer.
+              <span class="dots">...</span>
+              <span class="more-text hidden">
+                Open Graph‑tagger brukes når siden deles på sosiale medier, slik
+                at riktig tittel og beskrivelse vises. <br />
+                <strong>Målet:</strong> Disse meta‑taggene brukes i HTML for å
+                gi informasjon om nettsiden til søkemotorer og sosiale medier.
+                <code>description</code> brukes av Google for å vise en kort
+                tekst om siden. Open Graph‑taggene (<code>og:title</code>,
+                <code>og:description</code>, <code>og:type</code>,
+                <code>og:locale</code>) brukes ved deling, slik at riktig tittel,
+                beskrivelse, innholdstype og språk vises i forhåndsvisningen.
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- Head seksjon -->
+        <article class="card">
+          <img
+            src="../images/Header.jpg"
+            alt="Illustrasjon av HTML header‑seksjon"
+          />
+          <div class="card-body">
+            <h3><code>&lt;header&gt;</code>-seksjonen</h3>
+            <p>
+              Toppdelen på en nettside viser navigasjon, logoer og andre viktige
+              elementer øverst på siden. I HTML opprettes den med
+              <strong>&lt;header&gt;</strong>.
+              <span class="dots">...</span>
+              <span class="more-text hidden-text">
+                <br /><br />
+                Overskriften inneholder ofte en klikkbar tittel som lenker til
+                forsiden, en mobilvennlig menyknapp og en navigasjonsmeny. Bruk
+                gjerne <code>aria‑expanded</code> og <code>aria‑label</code> på
+                menyknappen, og <code>aria-current="page"</code> på aktiv lenke
+                for bedre tilgjengelighet.
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+       <br><br>
+
+        <!-- Hero seksjon -->
+        <article class="card">
+          <img
+            src="../images/Hero.jpg"
+            alt="Illustrasjon av HTML hero‑seksjon"
+          />
+          <div class="card-body">
+            <h3>Hva er en hero‑seksjon?</h3>
+            <p>
+              En hero‑seksjon er et stort innledende område øverst på en
+              nettside.
+              <span class="dots">...</span>
+              <span class="more-text hidden-text">
+                <br /><br />
+                Den inneholder vanligvis en overskrift, en kort beskrivelse og
+                et bilde. Hensikten er å raskt forklare hva nettstedet handler
+                om og lede brukeren til de viktigste sidene.
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+       <br><br>
+
+        <!-- main layout seksjon -->
+        <article class="card">
+          <img src="../images/Layout.jpg" alt="Eksempel på hovedoppsett" />
+          <div class="card-body">
+            <h3>Hovedoppsettet (<code>&lt;main&gt;</code>)</h3>
+            <p>
+              <strong>&lt;main&gt;</strong> inneholder det viktigste innholdet på
+              nettsiden. Det bør bare være én <strong>&lt;main&gt;</strong> per
+              side:
+              <span class="dots">...</span>
+              <span class="more-text hidden-text">
+                <br /><br />
+                • Bedre for skjermlesere<br />
+                • Bedre for søkemotorer<br />
+                • Gir klar og semantisk struktur
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- footer seksjon -->
+        <article class="card">
+          <img
+            src="../images/footer.jpg"
+            alt="Illustrasjon av HTML footer‑seksjon"
+          />
+          <div class="card-body">
+            <h3>Hva en bunntekst er</h3>
+            <p>
+              En bunntekst opprettes i HTML ved hjelp av
+              <strong>&lt;footer class="site-footer"&gt;</strong>. Klassen
+              <strong>site-footer</strong> styrer utseendet.
+              <br /><br />
+              <strong>&lt;span id="year"&gt;&lt;/span&gt;</strong> er et tomt
+              område der JavaScript automatisk setter inn gjeldende år.
+              <span class="dots">...</span>
+              <span class="more-text hidden-text">
+                <br /><br />
+                <strong>Formål med en bunntekst:</strong> <br />
+                • Gir kreditering til skaperne <br />
+                • Gir et profesjonelt utseende <br />
+                • Vises konsekvent nederst på alle sider <br />
+                • Oppdaterer årstallet automatisk med JavaScript
+              </span>
+            </p>
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Maung IT utvikling Læringportalen •
+          Bygget med HTML, CSS og JS
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

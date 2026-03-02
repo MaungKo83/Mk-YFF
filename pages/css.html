@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT utvikling - CSS</title>
+    <link rel="icon" type="image/favi-icon" href="../images/favicon.ico">
+
+
+    
+    <!-- Basic SEO/Open Graph -->
+    <meta
+      name="description"
+      content="IT utvikling Læringportalen. Lær grunnleggende ferdigheter innen frontend og mer."
+    />
+    <meta property="og:title" content="IT utvikling Læringportalen" />
+    <meta property="og:description" content="IT utvikling Læringportalen." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nb_NO" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">IT utvikling Læringportalen</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Meny"
+        >
+          ☰
+        </button>
+
+        <nav id="site-nav" class="nav">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html" aria-current="page">CSS</a></li>
+            <li><a href="java.html">JavaScript</a></li>
+            <li><a href="om.html">Om</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>IT utvikling Læringportalen</h1>
+          <p>
+            Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="html.html">Start med HTML</a>
+            <a class="btn" href="css.html">Utforsk CSS</a>
+            <a class="btn" href="java.html">JavaScript</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="../images/utvikling.jpg"
+            alt="Illustrasjon av webutvikling"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="courses container">
+        <h2>CSS‑koden</h2>
+
+        <!-- CSS-->
+        <article class="card">
+          <img src="../images/CSS.jpg" alt="css" />
+
+          <div class="card-body">
+            <h3>📘Hva er CSS‑koden?</h3>
+
+            <p>
+              Denne CSS‑filen styrer utseende, layout og design for hele nettsiden. <br> 
+              
+              <br />
+              <span class="dots">...</span>
+              <span class="more-text hidden">
+                Den er delt inn i logiske seksjoner for variabler, reset, layout, header, hero‑seksjon, kort (cards), skjema, footer og responsiv design. 
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+        <br><br>
+
+        <!-- CSS‑variabler (:root) -->
+        <article class="card">
+          <img
+            src="../images/root.jpg"
+            alt="root"
+          />
+
+          <div class="card-body">
+            <h3>🎨 1.CSS‑variabler (:root)</h3>
+
+            <p>
+            Her defineres globale fargevariabler. <br>
+
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+               <strong>Fordeler:</strong>  <br>
+
+enklere vedlikehold (endrer du én verdi → oppdateres alle steder) <br>
+konsistent design <br>
+enklere å lese koden <br>
+
+<strong>Eksempel: </strong><br>
+var(--brand) brukes som hovedfarge for knapper og lenker. <br>
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+        <!-- Reset-->
+        <article class="card">
+          <img src="../images/reset.jpg" alt="reset" />
+
+          <div class="card-body">
+            <h3>🔧 2.CSS Reset</h3>
+
+            <p>
+             
+                Denne delen nullstiller nettleserens standardstiler.
+             
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+               <strong>Formål:</strong>
+
+sikre lik oppførsel i alle nettlesere <br>
+hindre uønsket margin/padding <br>
+gjøre layout mer forutsigbart <br>
+              </span>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+       <br><br>
+
+        <!-- Grunnstil for body -->
+        <article class="card">
+          <img
+            src="../images/body.jpg"
+            alt="body"
+          />
+
+          <div class="card-body">
+            <h3>🖥️ 3.Grunnstil for body</h3>
+
+            <p>
+             <strong>Dette setter:</strong> 
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+                moderne systemfont for bedre lesbarhet <br>
+hvit tekst mot mørk bakgrunn <br>
+gradient bakgrunn som gir et profesjonelt preg <br>
+linjeavstand for bedre lesing <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+        <!-- Container -->
+        <article class="card">
+          <img
+            src="../images/container.jpg"
+            alt="Container"
+          />
+
+          <div class="card-body">
+            <h3>📏4. Container – breddebegrensning</h3>
+
+            <p>
+             <strong>Denne sørger for at innholdet:</strong> 
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+            aldri blir bredere enn 1100px <br>
+har marg på begge sider <br>
+er sentrert <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+<br><br>
+
+
+        <!-- ----------Skip‑link----------->
+        <article class="card">
+          <img
+            src="../images/skip link.jpg"
+            alt="body"
+          />
+
+          <div class="card-body">
+            <h3>♿ 5. Skip‑link (tilgjengelighet)</h3>
+
+            <p>
+             <strong>Dette gir bedre tilgjengelighet:</strong> 
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+               skjermlesere og tastaturnavigasjon kan hoppe rett til innholdet <br>
+vises kun når brukeren trykker Tab <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+
+        <!-- Header og navigasjon -->
+        <article class="card">
+          <img
+            src="../images/Sticky header.jpg"
+            alt="sticky header"
+          />
+
+          <div class="card-body">
+            <h3>🧭 6. Header og navigasjon/h3>
+
+            <p>
+             <strong>Effekt:</strong> 
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+headeren følger med når man scroller <br>
+semi‑transparent med «glass‑effekt» <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+
+        <!-- Navigasjon -->
+        <article class="card">
+          <img
+            src="../images/Navigasjon.jpg"
+            alt="navigasjon"
+          />
+
+          <div class="card-body">
+            <h3>Navigasjon</h3>
+
+            <p>
+             <strong>Navigasjon:</strong> 
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+                menyer ligger horisontalt <br>
+hover‑effekt <br>
+aktuell side markeres med aria-current="page" <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+
+<!-- Mobilmeny -->
+        <article class="card">
+          <img
+            src="../images/mobile menu.jpg"
+            alt="mobilemeny"
+          />
+
+          <div class="card-body">
+            <h3>Mobilmeny</h3>
+
+            <p>
+             <strong>Gir:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+             hamburger‑meny på mobil <br>
+meny åpnes/lukkes med JavaScript <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+        <!-- hero & grid layout -->
+        <article class="card">
+          <img
+            src="../images/hero css.jpg"
+            alt="hero css"
+          />
+            <img
+            src="../images/grid layout.jpg"
+            alt="grid layout"
+          />
+
+          <div class="card-body">
+            <h3>7. Hero‑seksjonen (forsidebilde + tekst)</h3>
+
+            <p>
+              <strong>Hero‑seksjonen:</strong>Gir god luft rundt hero‑seksjonen.
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+             
+             <strong>Grid-layout:</strong> <strong>venstre: </strong> tekst <br>
+høyre: </strong>bilde <br>
+høyre kolonne har fleksibel bredde (fra 280px til 520px) <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+<br><br>
+
+        <!--Responsiv hero  -->
+        <article class="card">
+          <img
+            src="../images/responsiv hero.jpg"
+            alt="responsiv"
+          />
+
+          <div class="card-body">
+            <h3>Responsive Hero</h3>
+
+            <p>
+             <strong>Når skjermen er liten:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+          bildedelen havner under teksten <br>
+alt blir midtstilte kolonner <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+<br><br>
+
+
+
+
+        <!-- Hero-bilde -->
+        <article class="card">
+          <img
+            src="../images/hero bilder.jpg"
+            alt="hero-bilde"
+          />
+
+          <div class="card-body">
+            <h3>Hero-bilde</h3>
+
+            <p>
+             <strong>Dette gir:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+            myke avrundede hjørner <br>
+moderne skygge <br>
+bilde som holder samme proporsjoner på alle sider <br>
+ingen forvrenging 
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+
+        <!--  Cards‑seksjon -->
+        <article class="card">
+          <img
+            src="../images/card seksjon.jpg"
+            alt="card seksjon"
+          />
+ 
+            <img
+            src="../images/card design.jpg"
+            alt="card design"
+          />
+
+          <div class="card-body">
+            <h3>📚 8. Cards‑seksjon</h3>
+
+            <p>
+             <strong>Gir tre responsive kolonner.</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+             moderne kortdesign <br>
+skygge for dybde <br>
+mørkt panel med kontrast mot tekst <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+
+        <!--  -->
+        <article class="card">
+          <img
+            src="../images/kontakt.jpg"
+            alt="kontakt form"
+          />
+
+          <div class="card-body">
+            <h3>📬 9. Kontaktform</h3>
+
+            <p>
+             <strong>Kontaktform:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+            bruker grid‑layout <br>
+mørk bakgrunn + lys tekst <br>
+blå outline for tilgjengelig fokus <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+<br><br>
+
+
+        <!-- Footer css-->
+        <article class="card">
+          <img
+            src="../images/footer css.jpg"
+            alt="footer css"
+          />
+
+          <div class="card-body">
+            <h3>🦶 10. Footer/h3>
+
+            <p>
+         <strong>Footer skiller seg tydelig fra hovedinnholdet med:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+             topp-border <br>
+grå tekst <br>
+godt med luft <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+        <br><br>
+
+
+        <!--  Responsivt design -->
+        <article class="card">
+          <img
+            src="../images/skjermer.jpg"
+            alt="responsivt design"
+          />
+
+          <div class="card-body">
+            <h3>📱 11. Responsivt design</h3>
+
+            <p>
+             <strong>Dette gjør at layouten fungerer på:</strong>
+
+              <span class="dots">...</span>
+
+              <span class="more-text hidden-text">
+                <br /><br />
+             PC <br>
+nettbrett <br>
+mobil  <br>
+            </p>
+
+            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Maung IT utvikling Læringportalen •
+          Bygget med HTML, CSS og JS
+        </p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
