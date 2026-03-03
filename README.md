@@ -1,6 +1,6 @@
-# 🌐 IT Utvikling – Læringsportalen
+# 🌐Læringsportal for frontend-utviklere
 
-Velkommen til **IT Utvikling Læringsportalen** – et læringsprosjekt laget for å vise grunnleggende ferdigheter innen **HTML, CSS og JavaScript** i praksis.  
+Velkommen til **Læringsportal for frontend-utviklere** – et læringsprosjekt laget for å vise grunnleggende ferdigheter innen **HTML, CSS og JavaScript** i praksis.  
 Nettsiden er publisert med GitHub Pages og fungerer som en liten frontend‑læringsplattform.
 
 🔗 **Live nettsted:**  
