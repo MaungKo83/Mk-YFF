@@ -1,12 +1,23 @@
 <!doctype html>
-<html lang="no">
+<html lang="nb">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Læringsportal for frontend-utviklere</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maung – Om</title>
+    <link rel="icon" type="image/favi-icon" href="../images/favicon.ico" />
 
-    <!-- Correct favicon type -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!--  (used by footer icons/colors) -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- Font Awesome (once) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Page CSS & JS -->
+    <link rel="stylesheet" href="../css/resume.css" />
+    <script src="../js/resume.js" defer></script>
 
     <!-- Basic SEO/Open Graph -->
     <meta
@@ -20,201 +31,326 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nb_NO" />
-
-    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
+    <!-- Skip link for accessibility -->
     <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
 
-    <!-- nettstedsoverskrift -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html"
-          >Læringsportal for frontend-utviklere</a
-        >
+    <!-- Header / Nav -->
+    <header class="site-header" role="banner">
+      <div class="header-container header-inner">
+        <a class="brand" href="../index.html" aria-label="Gå til forsiden">
+          Læringsportal for frontend-utviklere
+        </a>
 
         <button
           class="nav-toggle"
           aria-expanded="false"
           aria-controls="site-nav"
+          aria-label="Meny"
         >
-          <span class="sr-only">Åpne/lukke meny</span> ☰
+          <span class="sr-only">Åpne/lukke meny</span>
+          ☰
         </button>
 
         <nav id="site-nav" class="nav" aria-label="Hovedmeny">
           <ul>
-            <li><a href="index.html" aria-current="page">Hjem</a></li>
-            <li><a href="pages/html.html">HTML</a></li>
-            <li><a href="pages/css.html">CSS</a></li>
-            <li><a href="pages/java.html">JavaScript</a></li>
-            <li><a href="pages/om.html">Om meg</a></li>
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="java.html">JavaScript</a></li>
+            <li><a href="om.html" aria-current="page">Om meg</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" role="region" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1 id="hero-title">Læringsportal for frontend-utviklere</h1>
           <p>
             Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.
           </p>
-
           <div class="hero-cta">
-            <a class="btn primary" href="pages/html.html">Start med HTML</a>
-            <a class="btn" href="pages/css.html">Utforsk CSS</a>
-            <a class="btn" href="pages/java.html">Gi liv med JavaScript</a>
-            <a class="btn" href="pages/om.html">Mer om meg</a>
+            <a class="btn primary" href="html.html">Start med HTML</a>
+            <a class="btn" href="css.html">Utforsk CSS</a>
+            <a class="btn" href="java.html">Gi liv med JavaScript</a>
+            <a class="btn" href="om.html">Mer om meg</a>
           </div>
         </div>
 
-        <figure class="hero-media">
+        <figure class="hero-media" aria-hidden="true">
           <img
-            src="images/utvikling.jpg"
-            alt="Frontend utvikling illustrasjon"
+            src="../images/utvikling.jpg"
+            alt="Illustrasjon av webutvikling på laptop"
           />
         </figure>
       </div>
     </section>
 
-    <!-- Main -->
+    <!-- Main content (CV layout) -->
     <main id="main">
-      <section class="courses container" aria-labelledby="kurs-title">
-        <h2 id="kurs-title">Læringsportal oversikt</h2>
+      <div class="resume-container">
+        <!-- LEFT COLUMN -->
+        <div class="left">
+          <div class="profile">
+            <img src="../images/pf.jpg" alt="Profilbilde av Maung Ko" />
+            <div class="profile-name">Maung Ko</div>
+          </div>
 
-        <div class="grid">
-          <!-- HTML -->
-          <article class="card">
-            <img src="images/html.png" alt="HTML logo" />
-            <div class="card-body">
-              <h3>HTML</h3>
-              <p>
-                HTML er grunnspråket for å lage nettsider og brukes til å
-                strukturere innhold.
-              </p>
-              <a class="btn small" href="pages/html.html">Les mer</a>
-            </div>
-          </article>
+          <div class="left-content">
+            <p><i class="fa fa-address-book"></i>Kontaktinformasjon</p>
 
-          <!-- CSS -->
-          <article class="card">
-            <img src="images/css.png" alt="CSS logo" />
-            <div class="card-body">
-              <h3>CSS</h3>
-              <p>
-                CSS styrer design, layout, farger og typografi på nettsiden.
-              </p>
-              <a class="btn small" href="pages/css.html">Les mer</a>
-            </div>
-          </article>
+            <p>
+              <i class="fa fa-home"></i> Holmåsveien 6, 1440 Drøbak
+              <i class="fa fa-map-marker"></i> Norge
+            </p>
+            <p><i class="fa fa-envelope"></i> scofielddvb.no@gmail.com</p>
+            <p><i class="fa fa-phone"></i> +47 462 43 794</p>
+            <hr />
 
-          <!-- JavaScript -->
-          <article class="card">
-            <img src="images/javascript.gif" alt="JavaScript logo" />
-            <div class="card-body">
-              <h3>JavaScript</h3>
-              <p>JavaScript gjør nettsider dynamiske og interaktive.</p>
-              <a class="btn small" href="pages/java.html">Les mer</a>
-            </div>
-          </article>
+            <p class="skill-title">
+              <i class="fa fa-asterisk"></i> Ferdigheter
+            </p>
 
-          <!-- Om meg -->
-          <article class="card">
-            <img src="images/pf.jpg" alt="Profilbilde" />
-            <div class="card-body">
-              <h3>Om meg</h3>
-              <p>
-                Motivert IT-interessert med erfaring innen drift og
-                kundeservice.
-              </p>
-              <a class="btn small" href="pages/om.html">Les mer</a>
-            </div>
-          </article>
-
-          <!-- lysbilde fremvisning kol 1 -->
-          <article class="card">
-            <div class="slideshow-container">
-              <div class="myslide fade">
-                <h3>HTML Tema</h3>
-                <img src="images/html.png" alt="HTML semantic" />
-                <div class="text">HTML Semantic</div>
-              </div>
-
-              <div class="myslide fade">
-                <img src="images/html1.png" alt="HTML struktur" />
-                <div class="text">HTML-struktur</div>
+            <p>IT-drift</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 90%">
+                Brukerstøtte og feilsøking (maskinvare og programvare)
               </div>
             </div>
-          </article>
 
-          <!-- lysbilde fremvisning kol 2 -->
-          <article class="card">
-            <div class="slideshow-container">
-              <div class="myslide fade">
-                <h3>Frontend</h3>
-                <img src="images/SEO.jpg" alt="SEO" />
-                <div class="text">SEO</div>
-              </div>
-
-              <div class="myslide fade">
-                <img src="images/utvikling.jpg" alt="Utvikling" />
-                <div class="text">Utvikling</div>
-              </div>
-
-              <div class="myslide fade">
-                <img
-                  src="images/drift-utvikle.png"
-                  alt="IT drift og utvikling"
-                />
-                <div class="text">IT drift og utvikling</div>
+            <p>Frontend‑utvikling</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 75%">HTML5 / CSS3</div>
+            </div>
+            <div class="bar">
+              <div class="bar-fill" style="width: 55%">
+                JavaScript (grunnleggende–viderekommende)
               </div>
             </div>
-          </article>
+
+            <p>Adobe Premiere &amp; After Effects</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 70%">
+                redigering / mediehåndtering
+              </div>
+            </div>
+
+            <p>Windows, MS Office</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 80%">
+                Word, Excel, PowerPoint
+              </div>
+            </div>
+
+            <p>Autodesk Revit / SketchUp</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 70%">
+                Grunnleggende 3D‑verktøy
+              </div>
+            </div>
+
+            <hr />
+
+            <p class="skill-title"><i class="fa fa-globe"></i> Språk</p>
+
+            <p>Burmesisk</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 100%">morsmål</div>
+            </div>
+
+            <p>Engelsk</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 60%">A2 - B1</div>
+            </div>
+
+            <p>Norsk</p>
+            <div class="bar">
+              <div class="bar-fill" style="width: 50%">A2 - B1</div>
+            </div>
+
+            <hr />
+            <p class="skill-title"><i class="fa fa-book"></i>Referanser</p>
+            <address>
+              <strong>Simen Pedersen:</strong><br />
+              Sjef, KIWI 541, Ås<br />
+              <i class="fa fa-phone"></i> +47 947 97 733
+            </address>
+
+            <hr />
+            <address>
+              <strong>Aye Chan Naing:</strong><br />
+              Direktør og sjefredaktør, Democratic Voice of Burma (DVB)<br />
+              <i class="fa fa-phone"></i> +47 929 78 7645
+            </address>
+          </div>
         </div>
-      </section>
 
-      <!-- Kontakt -->
-      <section id="kontakt" class="contact" aria-labelledby="kontakt-title">
-        <div class="container">
-          <h2 id="kontakt-title">Kontakt</h2>
+        <!-- RIGHT COLUMN -->
+        <div class="right">
+          <div class="card">
+            <h2><i class="fa fa-user"></i> Om meg</h2>
+            <p>
+              Jeg er en positiv og ansvarsbevisst person med erfaring fra
+              IT‑relaterte oppgaver, logistikk og kundeservice. Jeg er
+              lærevillig, strukturert og motivert for å utvikle meg videre innen
+              IT‑drift og teknologi. Jeg trives med samarbeid og tar ansvar for
+              oppgavene mine.
+            </p>
+          </div>
+          <hr />
 
-          <form class="contact-form" onsubmit="return false;">
-            <p class="muted">Dette er et demoskjema (ingen data sendes).</p>
+          <div class="card">
+            <h2><i class="fa fa-suitcase"></i> Arbeidserfaring</h2>
 
-            <label class="field">
-              <span>Navn</span>
-              <input type="text" required />
-            </label>
+            <h5>Arkivar / Democratic Voice of Burma (DVB)</h5>
+            <p class="date">
+              <i class="fa fa-calendar"></i> Oct 2009 –
+              <span class="current">Nå</span>
+            </p>
+            <p>
+              Vedlikehold og organisering av digitale arkiver, skylagring og
+              strukturering av mediefiler, distribusjon av digitalt innhold,
+              arbeid med systemer, rutiner og datasikkerhet.
+            </p>
+            <hr />
 
-            <label class="field">
-              <span>E-post</span>
-              <input type="email" required />
-            </label>
+            <h5>Butikkmedarbeider praksis / KIWI 541, Ås</h5>
+            <p class="date">
+              <i class="fa fa-calendar"></i> Sept 2013 – Mars 2024
+            </p>
+            <p>
+              Kundeservice og brukerstøtte i høyt tempo, kassearbeid og
+              håndtering av digitale systemer, samarbeid, ansvar og
+              rutinearbeid, varepåfylling og lagerarbeid.
+            </p>
+            <hr />
 
-            <label class="field">
-              <span>Melding</span>
-              <textarea rows="4"></textarea>
-            </label>
+            <h5>Logistikkoperatør / JLC</h5>
+            <p class="date">
+              <i class="fa fa-calendar"></i> Feb 2006 – Mai 2009
+            </p>
+            <p>
+              Lagerstyring og koordinering, administrasjon og planlegging av
+              biler og kraner.
+            </p>
+          </div>
+          <hr />
 
-            <button class="btn primary" type="submit">Send forespørsel</button>
-          </form>
+          <div class="card">
+            <h2><i class="fa fa-certificate"></i> Utdannelse</h2>
+
+            <h5><i class="fa fa-book"></i>Strømmen videregående skole</h5>
+            <p class="date">
+              <i class="fa fa-calendar"></i> 2025 –
+              <span class="current">Nå</span>
+            </p>
+            <p>Informasjonsteknologi og medieproduksjon</p>
+            <hr />
+
+            <h5>
+              <i class="fa fa-graduation-cap"></i>Panglong‑universitetet /
+              Filosofi
+            </h5>
+            <p class="date"><i class="fa fa-calendar"></i> 2004 – 2006</p>
+            <p>Studier i filosofi, etikk, språk og samfunn.</p>
+            <hr />
+
+            <h5>
+              <i class="fa fa-book"></i>St. Theresa's Little Way
+              Misjonsinstitutt / Religion
+            </h5>
+            <p class="date"><i class="fa fa-calendar"></i> 2004 – 2006</p>
+            <p>Engelsk, musikk og bibelske studier.</p>
+          </div>
+          <hr />
+
+          <section class="card" aria-labelledby="certifications">
+            <h2>
+              <i class="fa fa-graduation-cap"></i> IT‑sertifikater og kurs
+            </h2>
+
+            <h3>Job Skills Share</h3>
+            <ul class="cert-list">
+              <li>
+                <a
+                  href="https://www.jobskillshare.org/certificates/2018/?c=197839&u=65171"
+                >
+                  Modern IT Support: Part 1 | A+ (220‑1102)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.jobskillshare.org/certificates/2018/?c=196787&u=65171"
+                >
+                  Modern IT Support: Part 2 | A+ (220‑1101)
+                </a>
+              </li>
+            </ul>
+
+            <h3>Coursera</h3>
+            <ul class="cert-list">
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/certificate/F2HAT4I12ECA"
+                >
+                  Google IT Support Professional Certificate
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/professional-cert/1KI586FPJHB0"
+                >
+                  IBM IT Support Professional Certificate
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/DLEB8J4WUZQY"
+                >
+                  Microsoft Word Certificate
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <hr />
+
+          <div class="card">
+            <h2><i class="fa fa-book"></i> Kurs og opplæring</h2>
+
+            <h5><i class="fa fa-book"></i>Norskkurs / Ås Læringssenter</h5>
+            <p class="date"><i class="fa fa-calendar"></i> 2022 – 2023</p>
+            <p>Språk, samfunnskunnskap og arbeidsforberedelse.</p>
+            <hr />
+
+            <h5><i class="fa fa-leaf"></i>Kiwanis Drøbak</h5>
+            <p class="date"><i class="fa fa-calendar"></i> (3 mnd)</p>
+            <p>Frivillig</p>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- bunntekst -->
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          &copy; <span id="year"></span> Maung IT utvikling • Bygget med HTML,
-          CSS og JS
-        </p>
+
+    <footer class="custom-footer">
+      <p>Finn meg på sosiale medier.</p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/peter.scofiled" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/maung-ko-23827473/" target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/maungk83/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
       </div>
     </footer>
-
-    <script src="js/script.js" defer></script>
   </body>
 </html>
