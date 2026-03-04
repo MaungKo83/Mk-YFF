@@ -372,12 +372,31 @@ hr {
   }
 }
 
-footer i {
-  font-size: 24px;
-  margin: 0 8px;
+.custom-footer {
+  background: #009688; /* teal background like screenshot */
+  text-align: center;
+  padding: 1rem 1rem;
   color: white;
+  margin-top: 2rem;
 }
 
-footer a {
-  text-decoration: none;
+.custom-footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.custom-footer i {
+  font-size: 24px;
+  margin: 0 12px;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.custom-footer i:hover {
+  transform: translateY(-3px);
+  color: #e0f7f5;
 }
