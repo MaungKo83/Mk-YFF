@@ -13,14 +13,11 @@
       content="Læringsportal for frontend-utviklere. Lær grunnleggende ferdigheter innen frontend og mer."
     />
     <meta property="og:title" content="Læringsportal for frontend-utviklere" />
-    <meta
-      property="og:description"
-      content="Læringsportal for frontend-utviklere"
-    />
+    <meta property="og:description" content="Læringsportal for frontend-utviklere" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nb_NO" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
@@ -28,15 +25,14 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="../index.html"
-          >Læringsportal for frontend-utviklere</a
-        >
+        <a class="brand" href="../index.html">Læringsportal for frontend-utviklere</a>
 
         <button
           class="nav-toggle"
           aria-expanded="false"
           aria-controls="site-nav"
           aria-label="Meny"
+          type="button"
         >
           ☰
         </button>
@@ -83,9 +79,8 @@
         <h2>CSS-koden</h2>
 
         <!-- HEADER & NAV FIXED EXAMPLE -->
-
         <article class="card">
-          <img src="../images/Sticky header.jpg" alt="Sticky header" />
+          <img src="../images/Sticky header.jpg" alt="Sticky header" loading="lazy" />
           <div class="card-body">
             <h3>🧭 6. Header og navigasjon</h3>
             <p>
@@ -97,15 +92,16 @@
                 semi-transparent med «glass-effekt»
               </span>
             </p>
-            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+            <button class="read-more-btn" aria-expanded="false" type="button">Les mer</button>
           </div>
         </article>
 
-        <!-- HERO GRID FIXED EXAMPLE -->
+        <br /><br />
 
+        <!-- HERO GRID FIXED EXAMPLE -->
         <article class="card">
-          <img src="../images/hero css.jpg" alt="Hero css" />
-          <img src="../images/grid layout.jpg" alt="Grid layout" />
+          <img src="../images/hero css.jpg" alt="Hero css" loading="lazy" />
+          <img src="../images/grid layout.jpg" alt="Grid layout" loading="lazy" />
           <div class="card-body">
             <h3>7. Hero-seksjonen</h3>
             <p>
@@ -119,20 +115,19 @@
                 fleksibel bredde (280px – 520px)
               </span>
             </p>
-            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+            <button class="read-more-btn" aria-expanded="false" type="button">Les mer</button>
           </div>
         </article>
 
-        <!-- FOOTER FIXED -->
+        <br /><br />
 
+        <!-- FOOTER CARD -->
         <article class="card">
-          <img src="../images/footer css.jpg" alt="Footer css" />
+          <img src="../images/footer css.jpg" alt="Footer css" loading="lazy" />
           <div class="card-body">
             <h3>🦶 10. Footer</h3>
             <p>
-              <strong
-                >Footer skiller seg tydelig fra hovedinnholdet med:</strong
-              >
+              <strong>Footer skiller seg tydelig fra hovedinnholdet med:</strong>
               <span class="dots">...</span>
               <span class="more-text hidden-text">
                 <br /><br />
@@ -141,7 +136,41 @@
                 godt med luft
               </span>
             </p>
-            <button class="read-more-btn" aria-expanded="false">Les mer</button>
+            <button class="read-more-btn" aria-expanded="false" type="button">Les mer</button>
+          </div>
+        </article>
+
+        <br /><br />
+
+        <!-- BOX MODEL CARD -->
+        <article class="card">
+          <img src="../images/box-properties.jpg" alt="CSS Box Model illustrasjon" loading="lazy" />
+          <div class="card-body">
+            <h3>CSS Box Model Properties</h3>
+
+            <p id="one-value">
+              Én verdi: 6 piksler bred kant på alle fire sider.
+            </p>
+
+            <p id="two-values">
+              To forskjellige verdier: 2 piksler bred topp- og bunnkant, 10 piksler bred høyre og venstre kant.
+            </p>
+
+            <span class="dots">...</span>
+
+            <div class="more-text hidden-text">
+              <p id="three-values">
+                Tre forskjellige verdier: 0.3em øverst, 9 piksler nederst og 0 bredde på høyre og venstre side.
+              </p>
+
+              <p id="four-values">
+                Fire forskjellige verdier: "thin" øverst, "medium" høyre, "thick" nederst og 1em venstre.
+              </p>
+            </div>
+
+            <button class="read-more-btn" aria-expanded="false" type="button">
+              Les mer
+            </button>
           </div>
         </article>
       </section>
@@ -156,6 +185,6 @@
       </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="/js/script.js" defer></script>
   </body>
 </html>
