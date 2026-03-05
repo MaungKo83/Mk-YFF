@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Læringsportal for frontend-utviklere</title>
 
-    <!-- Correct favicon type -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Basic SEO/Open Graph -->
-    <meta
-      name="description"
-      content="Læringsportal for frontend-utviklere. Lær grunnleggende ferdigheter innen frontend og mer."
-    />
+    <meta name="description"
+          content="Læringsportal for frontend-utviklere. Lær grunnleggende ferdigheter innen frontend og mer." />
     <meta property="og:title" content="Læringsportal for frontend-utviklere" />
-    <meta
-      property="og:description"
-      content="Læringsportal for frontend-utviklere"
-    />
+    <meta property="og:description" content="Læringsportal for frontend-utviklere" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nb_NO" />
 
@@ -27,18 +21,12 @@
   <body>
     <a class="skip-link" href="#main">Hopp til hovedinnhold</a>
 
-    <!-- nettstedsoverskrift -->
+    <!-- Topp/header -->
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"
-          >Læringsportal for frontend-utviklere</a
-        >
+        <a class="brand" href="index.html">Læringsportal for frontend-utviklere</a>
 
-        <button
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="site-nav"
-        >
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" type="button" aria-label="Meny">
           <span class="sr-only">Åpne/lukke meny</span> ☰
         </button>
 
@@ -59,9 +47,7 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1 id="hero-title">Læringsportal for frontend-utviklere</h1>
-          <p>
-            Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.
-          </p>
+          <p>Frontend grunnlag: HTML, CSS og JavaScript. Bygg moderne nettsider.</p>
 
           <div class="hero-cta">
             <a class="btn primary" href="pages/html.html">Start med HTML</a>
@@ -72,15 +58,12 @@
         </div>
 
         <figure class="hero-media">
-          <img
-            src="images/utvikling.jpg"
-            alt="Frontend utvikling illustrasjon"
-          />
+          <img src="images/utvikling.jpg" alt="Frontend utvikling illustrasjon" width="1200" height="900" loading="lazy" />
         </figure>
       </div>
     </section>
 
-    <!-- Main -->
+    <!-- Hovedinnhold -->
     <main id="main">
       <section class="courses container" aria-labelledby="kurs-title">
         <h2 id="kurs-title">Læringsportal oversikt</h2>
@@ -88,32 +71,27 @@
         <div class="grid">
           <!-- HTML -->
           <article class="card">
-            <img src="images/html.png" alt="HTML logo" />
+            <img src="images/html.png" alt="HTML logo" width="600" height="400" loading="lazy" />
             <div class="card-body">
               <h3>HTML</h3>
-              <p>
-                HTML er grunnspråket for å lage nettsider og brukes til å
-                strukturere innhold.
-              </p>
+              <p>HTML er grunnspråket for å lage nettsider og brukes til å strukturere innhold.</p>
               <a class="btn small" href="pages/html.html">Les mer</a>
             </div>
           </article>
 
           <!-- CSS -->
           <article class="card">
-            <img src="images/css.png" alt="CSS logo" />
+            <img src="images/css.png" alt="CSS logo" width="600" height="400" loading="lazy" />
             <div class="card-body">
               <h3>CSS</h3>
-              <p>
-                CSS styrer design, layout, farger og typografi på nettsiden.
-              </p>
+              <p>CSS styrer design, layout, farger og typografi på nettsiden.</p>
               <a class="btn small" href="pages/css.html">Les mer</a>
             </div>
           </article>
 
           <!-- JavaScript -->
           <article class="card">
-            <img src="images/Javascript.gif" alt="JavaScript logo" />
+            <img src="images/Javascript.gif" alt="JavaScript logo" width="600" height="400" loading="lazy" />
             <div class="card-body">
               <h3>JavaScript</h3>
               <p>JavaScript gjør nettsider dynamiske og interaktive.</p>
@@ -123,52 +101,43 @@
 
           <!-- Om meg -->
           <article class="card">
-            <img src="images/pf.jpg" alt="Profilbilde" />
+            <img src="images/pf.jpg" alt="Profilbilde" width="600" height="400" loading="lazy" />
             <div class="card-body">
               <h3>Om meg</h3>
-              <p>
-                Motivert IT-interessert med erfaring innen drift og
-                kundeservice.
-              </p>
+              <p>Motivert IT‑interessert med erfaring innen drift og kundeservice.</p>
               <a class="btn small" href="pages/om.html">Les mer</a>
             </div>
           </article>
 
-          <!-- lysbilde fremvisning kol 1 -->
+          <!-- Slideshow 1 -->
           <article class="card">
-            <div class="slideshow-container">
-              <div class="myslide fade">
+            <div class="slideshow-container" aria-label="HTML lysbilder" aria-live="polite">
+              <div class="myslide fade active">
                 <h3>HTML Tema</h3>
-                <img src="images/html.png" alt="HTML semantic" />
+                <img src="images/html.png" alt="HTML Semantic" width="600" height="400" loading="lazy" />
                 <div class="text">HTML Semantic</div>
               </div>
-
               <div class="myslide fade">
-                <img src="images/html1.png" alt="HTML struktur" />
+                <img src="images/html1.png" alt="HTML-struktur" width="600" height="400" loading="lazy" />
                 <div class="text">HTML-struktur</div>
               </div>
             </div>
           </article>
 
-          <!-- lysbilde fremvisning kol 2 -->
+          <!-- Slideshow 2 -->
           <article class="card">
-            <div class="slideshow-container">
-              <div class="myslide fade">
+            <div class="slideshow-container" aria-label="Frontend lysbilder" aria-live="polite">
+              <div class="myslide fade active">
                 <h3>Frontend</h3>
-                <img src="images/SEO.jpg" alt="SEO" />
+                <img src="images/SEO.jpg" alt="SEO" width="600" height="400" loading="lazy" />
                 <div class="text">SEO</div>
               </div>
-
               <div class="myslide fade">
-                <img src="images/utvikling.jpg" alt="Utvikling" />
+                <img src="images/utvikling.jpg" alt="Utvikling" width="600" height="400" loading="lazy" />
                 <div class="text">Utvikling</div>
               </div>
-
               <div class="myslide fade">
-                <img
-                  src="images/drift og utvikle.png"
-                  alt="IT drift og utvikling"
-                />
+                <img src="images/drift og utvikle.png" alt="IT drift og utvikling" width="600" height="400" loading="lazy" />
                 <div class="text">IT drift og utvikling</div>
               </div>
             </div>
@@ -182,7 +151,7 @@
           <h2 id="kontakt-title">Kontakt</h2>
 
           <form class="contact-form" onsubmit="return false;">
-           
+            <p class="muted">Dette er et demoskjema (ingen data sendes).</p>
 
             <label class="field">
               <span>Navn</span>
@@ -190,7 +159,7 @@
             </label>
 
             <label class="field">
-              <span>E-post</span>
+              <span>E‑post</span>
               <input type="email" required />
             </label>
 
@@ -205,20 +174,13 @@
       </section>
     </main>
 
-    <!-- bunntekst -->
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
-        <p>
-          &copy; <span id="year"></span> Maung IT utvikling • Bygget med HTML,
-          CSS og JS
-        </p>
+        <p>&copy; <span id="year"></span> Maung IT utvikling • Bygget med HTML, CSS og JS</p>
       </div>
     </footer>
 
     <script src="js/script.js" defer></script>
   </body>
 </html>
-
-
-
-
